@@ -1,0 +1,25 @@
+
+📦 Button Types:---
+| Button Type            | Description              | Example                   |
+| ---------------------- | ------------------------ | ------------------------- |
+| `Button`               | Default material button  | `Button {}`               |
+| `OutlinedButton`       | Has an outlined border   | `OutlinedButton {}`       |
+| `TextButton`           | No background or border  | `TextButton {}`           |
+| `IconButton`           | Contains only an icon    | `IconButton {}`           |
+| `FloatingActionButton` | Used for primary actions | `FloatingActionButton {}` |
+
+
+🧠 Key Button Properties Covered:--
+| Property                                                             | Purpose                                  |
+| -------------------------------------------------------------------- | ---------------------------------------- |
+| `onClick`                                                            | Handles click action                     |
+| `enabled`                                                            | Enables or disables the button           |
+| `colors`                                                             | Customizes background and content colors |
+| `elevation`                                                          | Provides shadow based on state           |
+| `shape`                                                              | Rounded, circle, etc.                    |
+| `modifier`                                                           | Adjusts size, padding, border, etc.      |
+| `interactionSource`                                                  | Tracks interaction events                |
+| `contentPadding`                                                     | Internal padding for content             |
+| `Icon`, `Text`                                                       | Button content                           |
+| `OutlinedButton`, `TextButton`, `IconButton`, `FloatingActionButton` | Specialized button types                 |
+
