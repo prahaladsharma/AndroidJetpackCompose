@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android_MVVM_Pro</string>
+    <string name="home">Home</string>
+    <string name="news_details">News Details</string>
+</resources>
