@@ -1,0 +1,21 @@
+🔍 Properties Used in This Example:----
+
+| Property / Feature  | Description                              |
+| ------------------- | ---------------------------------------- |
+| `modifier`          | Controls size, padding, clickable, etc.  |
+| `clickable`         | Adds click listener with ripple feedback |
+| `interactionSource` | Tracks state (like pressed)              |
+| `shape`             | Rounded corners                          |
+| `elevation`         | Controls shadow                          |
+| `colors`            | Sets container and content color         |
+| `border`            | Adds border around the card              |
+| `Image`             | Shows a profile or content image         |
+| `Text`              | Displays name and role                   |
+| `IconButton`        | Adds an actionable icon (with listener)  |
+
+
+📦 Required Dependencies:---
+Make sure these are added in your build.gradle:
+    implementation("androidx.compose.material3:material3:1.2.0")
+    implementation("androidx.compose.ui:ui:1.5.0")
+

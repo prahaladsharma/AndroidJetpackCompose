@@ -1,0 +1,25 @@
+Checkboxes let users select one or more items from a list. You might use a checkbox to let the user do the following:
+    * Turn an item on or off.
+    * Select from multiple options in a list.
+    * Indicate agreement or acceptance.
+
+Anatomy:-
+A checkbox consists of the following elements:
+    * Box: This is the container for the checkbox.
+    * Check: This is the visual indicator that shows whether the checkbox is selected or not.
+    * Label: This is the text that describes the checkbox.    
+
+
+States:-
+A checkbox can be in one of three states:
+    * Unselected: The checkbox is not selected. The box is empty.
+    * Indeterminate: The checkbox is in an indeterminate state. The box contains a dash.
+    * Selected: The checkbox is selected. The box contains a checkmark.
+
+/**
+* ✅ Best Practices:--
+*  🔹 Always pair a Checkbox with descriptive Text.
+*  🔹 Handle onCheckedChange separately in list items to avoid recomposition errors.
+*  🔹 Use rememberSaveable if state needs to persist across recompositions.
+*  🔹 Wrap checkboxes in a Row or Column for clean layouts.    
+**/
