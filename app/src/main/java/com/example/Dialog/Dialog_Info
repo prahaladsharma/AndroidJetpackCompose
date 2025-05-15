@@ -1,0 +1,41 @@
+Dialog:--
+
+1. 📦 What is a Dialog in Jetpack Compose?
+    * A Dialog is a small window that prompts the user to make a decision or enter additional information. 
+    * It blocks interaction with the rest of the app while it’s open (modal window).
+
+2. 💡 Why Use Dialogs?
+   Dialogs are useful for:
+   2.1 Confirmations (e.g., logout, delete).
+   2.2 Alerts or notifications.
+   2.3 User input (e.g., custom forms, name entry).
+   2.4 Loading indicators.
+
+3. ✳️ Built-in Dialog Types in Jetpack Compose
+Jetpack Compose provides multiple dialog options:
+  3.1 AlertDialog.
+  3.2 Dialog.
+  3.3 Dialog(onDismissRequest = {}) – for custom content.
+
+4. ✨ Properties of AlertDialog:--
+| Property           | Description                            |
+| ------------------ | -------------------------------------- |
+| `onDismissRequest` | Lambda called when dialog should close |
+| `title`            | Composable function for the title      |
+| `text`             | Composable function for the content    |
+| `confirmButton`    | Main button to confirm action          |
+| `dismissButton`    | Optional dismiss button                |
+| `shape`, `colors`  | Can be customized inside custom dialog |
+
+
+5. ⚙️ Dialog vs BottomSheet:--
+| Feature        | Dialog          | BottomSheet       |
+| -------------- | --------------- | ----------------- |
+| Modal behavior | Blocks screen   | Partially overlay |
+| Best for       | Alerts, confirm | Menus, forms      |
+| Native Compose | ✅ Yes           | ✅ Yes             |
+
+
+
+   
+
