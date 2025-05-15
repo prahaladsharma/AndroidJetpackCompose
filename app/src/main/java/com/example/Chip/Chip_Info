@@ -1,0 +1,45 @@
+1. Chip:--
+* The Chip component is a compact, interactive UI element. 
+* It represents complex entities like a contact or tag, often with an icon and label. 
+* It can be checkable, dismissible, or clickable.
+
+
+2. The four types of chips and where you might use them are as follows:-------
+2.1. Assist: 
+   * Guides the user during a task. Often appears as a temporary UI element in response to user input.
+2.2. Filter: 
+   * Allows users to refine content from a set of options. They can be selected or deselected, and may include a checkmark icon when selected.
+2.3. Input: 
+   * Represents user-provided information, such as selections in a menu. They can contain an icon and text, and provide an 'X' for removal.
+2.4. Suggestion: 
+   * Provides recommendations to the user based on their recent activity or input. Typically appear beneath an input field to prompt user 
+     actions.
+    ![Chip_Images_Type](image-1.png)
+
+
+3. API surface:----
+* There are four composables that correspond to the four types of chips. 
+  The following sections outline these composables and their differences in detail. However, they share the following parameters:
+3.1 label: 
+    * The string that appears on the chip.
+3.2 icon: 
+    * The icon displayed at the start of the chip. Some of the specific composables have a separate leadingIcon and trailingIcon parameter.
+3.3 onClick: 
+    * The lambda that the chip calls when the user presses it. 
+
+4. 🧠 Common Use Cases:---
+4.1 Tag selection (e.g., categories, interests)
+4.2 Filter options (e.g., "Newest", "Trending")
+4.3 Showing user actions ("Share", "Bookmark")
+4.4 Compact UI actions in dense spaces
+
+5. 🧱 Types of Chips:---
+| Type                | Description                               |
+| ------------------- | ----------------------------------------- |
+| **Assist Chip**     | Executes an action related to content     |
+| **Filter Chip**     | Used to filter content (multi-select)     |
+| **Input Chip**      | Represents user input with a remove icon  |
+| **Suggestion Chip** | Represents suggestions that can be chosen |
+
+
+
