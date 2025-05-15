@@ -1,0 +1,36 @@
+Date pickers:--
+    * A Date Picker is a UI component that allows users to select a date (day/month/year) from a calendar-like interface. 
+    * In Jetpack Compose, we don’t have a built-in DatePicker yet, so we use Android’s traditional DatePickerDialog inside Compose.
+
+1. Types:-
+1.1 Docked:    ![Docked](image.png)
+    * Appears inline within the layout. It's suitable for compact layouts where a dedicated dialog might feel intrusive.
+1.2 Modal: ![Model](image-1.png)
+    * Appears as a dialog overlaying the app's content. This provides a clear focus on date selection.
+1.3 Modal input: ![Model Input](image-2.png)
+    * Combines a text field with a modal date picker.
+1.4 DatePicker Range:-  ![DatePicker Range](image-3.png)
+    * You can create a date picker that lets the user select a range between a start and end date. To do so, use DateRangePicker.
+
+
+* You can implement these date pickers in your app using the following composables:
+    * DatePicker: General composable for a date picker. The container you use determines whether it is docked or model.
+    * DatePickerDialog: The container for both modal and modal input date pickers.
+    * DateRangePicker: For any date picker where the user can select a range with a start and end date. 
+
+ 2. Stae:- 
+
+
+
+✅ Pros and Cons
+| Pros                                            | Cons                          |
+| ----------------------------------------------- | ----------------------------- |
+| Easy integration with legacy `DatePickerDialog` | Not fully Compose-native      |
+| Full control over min/max/custom formats        | Slight mismatch in styling    |
+| Ideal for quick Compose apps                    | Not reactive in design system |
+
+
+
+
+Source:- https://developer.android.com/develop/ui/compose/components/datepickers
+
