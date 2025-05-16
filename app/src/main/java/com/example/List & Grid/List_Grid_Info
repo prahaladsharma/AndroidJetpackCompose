@@ -1,0 +1,51 @@
+📦 1. Memory Considerations:--
+* LazyColumn, LazyRow, and LazyGrid use lazy loading → only visible items are composed.
+* Efficient for large lists, saving CPU & memory.
+* Unlike Column, Row, or Box which render everything immediately, Lazy variants improve performance.
+
+
+2. Tips:--
+* Use remember or rememberSaveable to cache UI state.
+* Avoid heavy recompositions by using key.
+
+
+🧱 3. SOLID Principles in List/Grid
+| Principle                     | Implementation                                                                                            |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **S – Single Responsibility** | Separate UI items from data logic using `ViewModel`. Each composable has a focused purpose.               |
+| **O – Open/Closed**           | Components should allow extension via parameters (e.g., click listeners) without modifying existing code. |
+| **L – Liskov Substitution**   | Reusable item composables can be replaced with alternate views without affecting list behavior.           |
+| **I – Interface Segregation** | Define minimal interfaces for click handling or item selection.                                           |
+| **D – Dependency Inversion**  | Inject list data from the ViewModel using `StateFlow` or `LiveData`.                                      |
+
+
+🧬 4. Singleton Usage
+* Use Singleton only when your data is globally shared (e.g., user session, settings).
+    object ItemRepository {
+        fun getItems(): List<String> = listOf("One", "Two", "Three")
+    }
+* Avoid singletons in view logic or UI state — prefer DI (e.g., Hilt).
+
+
+🧠 5. Performance Tips
+* Prefer LazyColumn for large lists.
+* Use Modifier.clipToBounds() to reduce overdraw.
+* Use key() inside items() for stable recomposition.
+* Avoid recomposing the whole list when only one item changes — manage states properly.
+
+
+📋 6. Use Case Examples
+| Use Case             | Widget                              |
+| -------------------- | ----------------------------------- |
+| Chat App             | `LazyColumn` with reverse layout    |
+| Media Gallery        | `LazyVerticalGrid` for thumbnails   |
+| Form Fields          | Vertical `LazyColumn`               |
+| Horizontal Scrolling | `LazyRow` for banners or categories |
+
+📌 Summary
+✅ Use LazyColumn/LazyGrid for performance.
+✅ Apply SOLID for clean architecture.
+✅ Avoid singleton for UI logic.
+✅ Consider memory-efficient layouts.
+✅ Use Flow/State for dynamic updates.
+
