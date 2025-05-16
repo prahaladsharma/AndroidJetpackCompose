@@ -1,0 +1,54 @@
+Floating Action Button:--
+* A Floating Action Button (FAB) is a circular button that hovers above content and represents a primary action in the application. 
+* It's one of the core components for Material Design.
+
+![FAB](image.png)
+
+In Material Design, there are four types of FAB:-     
+1. FAB: A floating action button of ordinary size.
+2. Small FAB: A smaller floating action button.
+3. Large FAB: A larger floating action button.
+4. Extended FAB: A floating action button that contains more than just an icon.
+
+
+✅ When to Use FAB:-
+* To perform a primary or frequently used action
+* For prominent action visibility
+* Common in messaging, media, and utility apps
+
+🎯 Key Properties:-
+| Property          | Description                                      |
+| ----------------- | ------------------------------------------------ |
+| `onClick`         | Lambda to handle the click event                 |
+| `shape`           | Shape of the FAB (usually CircleShape)           |
+| `backgroundColor` | Background color of the FAB                      |
+| `contentColor`    | Color for the content (e.g., icon)               |
+| `elevation`       | Elevation for the shadow effect                  |
+| `modifier`        | To apply padding, alignment, size, etc.          |
+| `containerColor`  | Used in Material3 to define the background color |
+| `contentPadding`  | Padding inside FAB                               |
+
+
+
+🔐 Best Practices:--
+* Use only one FAB per screen.
+* Keep the FAB action contextual and primary.
+* Animate transitions using AnimatedVisibility if needed.
+
+
+📚 Real World Use Cases:--
+| App       | Use Case          |
+| --------- | ----------------- |
+| Gmail     | Compose new email |
+| WhatsApp  | Start a new chat  |
+| Notes App | Add a new note    |
+| Shopping  | Add item to cart  |
+
+
+
+
+
+
+
+Source:- https://developer.android.com/develop/ui/compose/components/fab   
+
